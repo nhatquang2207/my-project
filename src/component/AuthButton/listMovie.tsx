@@ -46,10 +46,10 @@ const list: movie[] = [
 ];
 const ListMovie = () => {
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-5  ">
       {list.map((item) => (
-        <div className="  bg-blue-500 relative  rounded-xl  shadow-lg hover:shadow-blue-700 overflow-hidden">
-          <img className="  " src={item.img} alt="" />
+        <div className="  bg-blue-500 relative rounded-xl  shadow-lg hover:shadow-blue-700 overflow-hidden">
+          <img className=" w-full " src={item.img} alt="" />
           <p className="absolute right-2 bottom-20 rounded-xl shadow-lg p-2 bg-cyan-100">
             {item.time}p
           </p>
